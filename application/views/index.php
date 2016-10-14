@@ -20,10 +20,7 @@
 		<input type="submit" name="submit" id="enviar" value="Enviar ajax">
 	</form>
 	<hr>
-
-	<div id="lista_poke">
-		
-	</div>
+	<h4 id=informe></h4>
 
 	<script src="public/js/jquery-3.1.0.min.js" type="text/javascript"></script>
 	<script type="text/javascript">var BASE_URL = '<?= base_url() ?>' + 'index.php/';</script>

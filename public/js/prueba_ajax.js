@@ -12,18 +12,11 @@ $(document).ready(function proajax(data){
 				"grupo" : $("[name = grupo]").val(),
 				"poke" : $("[name = poke]").val(),
 			},
+			success: function(informe)
+			{
+				$('#informe').html(informe);
+			}
 		})
-		.done(function(elnombrequetedelagana) {
-			console.log("success");
-			console.log(elnombrequetedelagana);
-		})
-		.fail(function() {
-			console.log("error");
-		})
-		.always(function() {
-			console.log("complete");
-		});
-		
 
 	});
 
