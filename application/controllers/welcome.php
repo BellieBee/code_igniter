@@ -26,4 +26,32 @@ class Welcome extends CI_Controller {
 		echo "Hola, " . $this->input->post('nombre') . ", bienvenido al grupo " . $this->input->post('grupo') . " y tu pokemon inicial es " . $this->input->post('poke');
 	}
 
+	public function calsum()
+	{
+		$num1 = $this->input->post('num1');
+		$num2 = $this->input->post('num2');
+		echo $num1 + $num2; 
+	}
+
+	public function calrest()
+	{
+		$num1 = $this->input->post('num1');
+		$num2 = $this->input->post('num2');
+		echo $num1 - $num2; 
+	}
+
+	public function calmult()
+	{
+		$num1 = $this->input->post('num1');
+		$num2 = $this->input->post('num2');
+		echo $num1 * $num2; 
+	}
+
+	public function caldiv()
+	{
+		$num1 = $this->input->post('num1');
+		$num2 = $this->input->post('num2');
+		echo $num1 / $num2; 
+	}
+
 }

@@ -21,6 +21,33 @@
 	</form>
 	<hr>
 	<h4 id=informe></h4>
+	<br>
+	<hr>
+
+	<table>
+		<caption>Tabla de pruebas con ajax</caption>
+		<thead>
+			<tr>
+				<th>Primer número</th>
+				<th>Segundo número</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td><input type="text" name="uno" id="uno"></td>
+				<td><input type="text" name="dos" id="dos"></td>
+			</tr>
+			<tr>
+				<td><span id="listo"></span></td>
+			</tr>
+		</tbody>
+	</table>
+	<br>
+	<input type="submit" name="submit" value="Suma" id="sumar">
+	<input type="submit" name="submit" value="Resta" id="restar">
+	<input type="submit" name="submit" value="Multiplicación" id="multi">
+	<input type="submit" name="submit" value="División" id="div">
+
 
 	<script src="public/js/jquery-3.1.0.min.js" type="text/javascript"></script>
 	<script type="text/javascript">var BASE_URL = '<?= base_url() ?>' + 'index.php/';</script>
